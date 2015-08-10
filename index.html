@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="UTF-8">
+	<title>TinyYouTube</title>
+
+	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="layout-transparent mdl-layout mdl-js-layout">
+
+		
+	<!-- header for burger button -->
+	<header class="mdl-layout__header mdl-layout__header--transparent">
+		<div class="mdl-layout__header-row"></div>
+	</header>
+	
+	<!-- drawer -->
+	<div class="mdl-layout__drawer">
+
+		<!-- search button and text field -->
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right searchFieldContainer">
+			<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+				<i class="material-icons">search</i>
+			</label>
+			<div class="mdl-textfield__expandable-holder">
+				<input class="mdl-textfield__input searchField" type="text" name="sample" id="fixed-header-drawer-exp" />
+			</div>
+		</div>
+		
+		<!-- cell for related videos -->
+		<nav id="relatedVideos" class="mdl-navigation"></nav>
+
+	</div>	
+
+	<!-- main contents -->
+	<div class="mdl-layout__content">	
+		<div class="mdl-grid mdl-grid--no-spacing main_content">
+
+			<!-- movie player -->
+			<div class="mdl-cell mdl-cell--12-col">
+				<div id="player"></div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+	<script src="index.js"></script>
+
+</body>
+</html>

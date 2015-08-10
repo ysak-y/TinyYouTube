@@ -1,0 +1,29 @@
+
+.mdl-layout__drawer{
+	background-color:black;
+	color: white;
+}
+
+.thumb{
+	width: 180px;
+	float: left;
+}
+
+.thumbTitle{
+	color:white;
+}
+
+.thumbAuthor{
+	font-size:12px;
+	color: #b31217;
+	font-weight:bold;
+}
+
+#relatedVideos{
+	padding-left:30px;
+	width: 180px;
+}
+
+.searchFieldContainer{
+	padding-right:13px;
+}
