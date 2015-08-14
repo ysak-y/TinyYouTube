@@ -3,7 +3,7 @@
 "use strict";
 
 var $ = require("jquery");
-var material = require("./bower_components/material-design-lite/material.min.js");
+var material = require("./node_modules/material-design-lite/material.min.js");
 var _ = require("underscore");
 var Backbone = require("backbone");
 var requestMovie = require("./js/request_movie.js");
