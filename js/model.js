@@ -1,14 +1,36 @@
 
-var Model = Backbone.Model.extend({
+
+var Video = Backbone.Model.extend({
+
 	defaults: {
-		videos: []
-	},
-	getRandomVideo: function(){
-		var len = this.get("videos").length;
-		var idx = parseInt(Math.random() * len);
-		return this.get("videos")[idx].link;
+
+		title: "",
+		link: "",
+		author: "",
+		src: ""
+	
 	}
+
 });
 
-module.exports = Model;
 
+var Videos = Backbone.Collection.extend({
+
+	model: Video,
+	
+	getRandomVideo: function(){
+		
+		var len = this.models.length;
+		var idx = parseInt(Math.random() * len);
+		return this.at(idx).get("link");
+	
+	}
+
+});
+
+module.exports = {
+
+	Video : Video,
+	Videos: Videos
+
+};
