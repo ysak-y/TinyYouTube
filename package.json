@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "backbone": "^1.2.1",
     "boom": "^2.8.0",
     "bower-require": "^0.6.8",
     "cheerio": "^0.19.0",
@@ -23,8 +24,11 @@
     "hoek": "^2.14.0",
     "inherits": "^2.0.1",
     "isarray": "0.0.1",
+    "jquery": "^2.1.4",
+    "material-design-lite": "^1.0.2",
     "process-nextick-args": "^1.0.2",
     "request": "^2.60.0",
-    "sntp": "^1.0.9"
+    "sntp": "^1.0.9",
+    "underscore": "^1.8.3"
   }
 }
